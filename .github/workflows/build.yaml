@@ -101,7 +101,7 @@ jobs:
 
       - name: Build Jars
         working-directory: ./celeritas
-        run: ./gradlew -Ptarget_versions=1.7.10 packageJar
+        run: ./gradlew -Ptarget_versions=1.8.9 packageJar
 
       - name: Update hash storage
         run: echo $COMMIT_HASH > ./latest_commit
